@@ -9,7 +9,7 @@
 #
 
 class User < ActiveRecord::Base
-  validates :email, :name, presence: true
+  validates :username, presence: true
 
   has_many :artworks,
     primary_key: :id,
